@@ -1,0 +1,25 @@
+
+* {
+  background-color: #cccccc;
+}
+
+img {
+  width: 100%;
+}
+
+.quiet {
+  padding-top: 50px;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: #0D8138;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  color: #810d2a;
+  text-decoration: underline;
+}
