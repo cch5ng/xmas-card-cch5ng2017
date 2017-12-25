@@ -1,15 +1,22 @@
 
 * {
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
+}
+
+.header {
+  background-color: #9eccaf;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #9eccaf;
+  padding-top: 3px;
 }
 
 img {
   width: 100%;
-}
-
-.quiet {
-  padding-top: 50px;
-  text-align: center;
 }
 
 a:link,
@@ -22,4 +29,32 @@ a:active,
 a:hover {
   color: #810d2a;
   text-decoration: underline;
+}
+
+.quiet {
+  background-color: #e6f2eb;
+  padding: 15px;
+  height: 360px;
+}
+
+details > summary {
+  list-style: none;
+  color: #0D8138;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+  color: #0D8138;
+}
+
+@media (min-width: 768px) {
+  .quiet {
+    height: 490px;
+  }
+}
+
+@media (min-width: 900px) {
+  .quiet {
+    height: 250px;
+  }
 }

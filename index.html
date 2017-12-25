@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+    <link rel="preload" href="images/penguin1b_1200x776.png" as="image" type="image/png">
+    <link rel="preload" href="images/penguin2eb_1200x776.png" as="image" type="image/png">
+    <link rel="preload" href="images/penguin3b_1200x776.png" as="image" type="image/png">
+    <link rel="preload" href="media/NiGiD_Lulajze_Jezuniu.mp3" as="audio" type="audio/mpeg">
 
-    <!-- Place favicon.ico in the root directory -->
-
-    <!--         <link rel="stylesheet" href="css/normalize.css">
-    -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -22,19 +22,24 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <header></header>
+    <header class="header">
+      <audio preload controls>
+        <source src="media/NiGiD_Lulajze_Jezuniu.mp3"  type="audio/mpeg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="http://dig.ccmixter.org/files/NiGiD/48576" target="_blank">link to the video</a> instead.</p>
+      </audio>
+    </header>
 
     <main>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/penguin1b_1200x776.png" alt="First slide">
+            <img class="d-block w-100" src="images/penguin1b_1200x776.png" alt="First slide" preload>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/penguin2eb_1200x776.png" alt="Second slide">
+            <img class="d-block w-100" src="images/penguin2eb_1200x776.png" alt="Second slide" preload>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/penguin3b_1200x776.png" alt="Third slide">
+            <img class="d-block w-100" src="images/penguin3b_1200x776.png" alt="Third slide" preload>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -49,25 +54,23 @@
     </main>
 
     <footer class="quiet">
-      <p>Made with ☕️ and ✋🏼 and <a href="https://html5boilerplate.com/" target="_blank"> HTML5 Boilerplate</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a> by <a href="https://github.com/cch5ng" target="_blank">cchung</a>.</p>
-      <p>Images are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></p>
+      <details>
+        <summary>Credits 💕</summary>
+        <ul>
+          <li><a href="http://dig.ccmixter.org/files/NiGiD/48576" target="_blank">Lulajze Jezuniu (Duet)</a> by Martijn de Boer (NiGiD) ft Doxent Zsigmond (doxent) c 2014 <a href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a></li>
+          <li><a href="https://html5boilerplate.com/" target="_blank"> HTML5 Boilerplate</a></li>
+          <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></li>
+          <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">web audio</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content" target="_blank">preloading content</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">details</a></li>
+          <li><a href="https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag" target="_blank">Stack Overflow: style html audio controls</a></li>
+          <li>images thanks to ✋🏼, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></li>
+          <li>code thanks to ☕</li>
+          <li>brought together by <a href="https://github.com/cch5ng" target="_blank">cchung</a></li>
+        </ul>
+      </details>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-<!--        <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-      <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
--->
-      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<!--         <script>
-          window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-          ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-      </script>
-      <script src="https://www.google-analytics.com/analytics.js" async defer></script>
--->    </body>
+</body>
 </html>
